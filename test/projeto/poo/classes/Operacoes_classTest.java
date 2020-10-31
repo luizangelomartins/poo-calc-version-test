@@ -63,19 +63,39 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
     /**
-     * Test of subtraiFracao method, of class Operacoes_class.
+     * TESTE DO METODO "subtraiFracao", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testSubtraiFracao() {
+        
+        int denominador = 6;
+        int numerador1 = 24;
+        int numerador2 = 12;
+        int resultado = calc.subtraiFracao(denominador, numerador1, numerador2);
+        assertEquals(2, resultado);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of multiplicaFracao method, of class Operacoes_class.
      */

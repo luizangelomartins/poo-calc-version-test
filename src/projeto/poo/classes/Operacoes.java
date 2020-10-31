@@ -22,7 +22,7 @@ public interface Operacoes {
 	abstract int somaFracao(int numerador1, int numerador2, int denominador1); 
         
 	// Subtração:
-	abstract int subtraiFracao(int numerador, int denominador);
+	abstract int subtraiFracao(int numerador1, int numerador2, int denominador1);
         
 	// Multiplicação:
 	abstract int multiplicaFracao(int numerador, int denominador);

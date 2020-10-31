@@ -51,26 +51,32 @@ public class Operacoes_class implements Operacoes {
 
     
     
-    
-    
-    
-    
-    
-    /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    // MÉTODO PARA SUBTRAÇÃO DE FRAÇÕES:
     @Override
-    public int subtraiFracao(int numerador, int denominador) {
-        /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int subtraiFracao(int denominador1, int numerador1, int numerador2) {
+     
+        int result1;
+        double result2;
+        
+        result1 = numerador1 - numerador2;
+        result2 = result1 / denominador1;
+        
+        return (int) result2;
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public int multiplicaFracao(int numerador, int denominador) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

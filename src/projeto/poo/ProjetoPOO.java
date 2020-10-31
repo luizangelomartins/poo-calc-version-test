@@ -42,6 +42,7 @@ public class ProjetoPOO {
             System.out.println("0 = SAIR.");
             System.out.println("1 = FAZER MMC.");
             System.out.println("2 = SOMAR FRAÇÃO.");
+            System.out.println("3 = SUBTRAIR FRAÇÃO.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -104,6 +105,34 @@ public class ProjetoPOO {
                 System.err.println("O RESULTADO E: " + operar.somaFracao(denominador_soma, numerador1_soma, numerador2_soma));
         
                     break;
+                    
+                    
+                    
+            // BLOCO QUE SE TRATA DA SUBTRAÇÃO DE FRAÇÕES:
+            case 3:
+                
+                int denominador_subtrair = 0;
+                int numerador1_subtrair = 0;
+                int numerador2_subtrair = 0;
+                
+                while ( denominador_subtrair == 0 ) {
+                    
+                Scanner subtrair = new Scanner(System.in);
+        
+                System.out.printf("Digite o denominador: "); 
+                denominador_subtrair = subtrair.nextInt(); 
+                System.out.printf("Digite o primeiro numerador: "); 
+                numerador1_subtrair = subtrair.nextInt(); 
+                System.out.printf("Digite o segundo numerador: "); 
+                numerador2_subtrair = subtrair.nextInt(); 
+                
+                    if ( denominador_subtrair == 0 ) { System.err.println("O DENOMINADOR NÃO PODE SER ZERO!"); }
+                
+                }
+        
+                System.err.println("A APROXIMAÇÃO DEU: " + operar.somaFracao(denominador_subtrair, numerador1_subtrair, numerador2_subtrair));
+        
+                    break;        
               
                     
                     
