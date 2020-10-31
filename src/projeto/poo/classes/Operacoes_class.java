@@ -33,24 +33,29 @@ public class Operacoes_class implements Operacoes {
         
     }
         
-        
     
     
-    
-    
+    // MÉTODO PARA SOMA DE FRAÇÕES:
     @Override
-    public int somaFracao(int numerador, int denominador) {
+    public int somaFracao(int denominador1, int numerador1, int numerador2) {
+      
+        int result1;
+        double result2;
         
+        result1 = numerador1 + numerador2;
+        result2 = result1 / denominador1;
         
-        
-        int resul;
-        
-        resul = numerador + denominador;
-        
-        return resul;
+        return (int)result2;
         
     }
 
+    
+    
+    
+    
+    
+    
+    
     /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

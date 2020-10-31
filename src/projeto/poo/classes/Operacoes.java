@@ -19,7 +19,7 @@ public interface Operacoes {
 	abstract int mmc(int denominador1, int denominador2); 
         
 	// Soma:
-	abstract int somaFracao(int numerador, int denominador); 
+	abstract int somaFracao(int numerador1, int numerador2, int denominador1); 
         
 	// Subtração:
 	abstract int subtraiFracao(int numerador, int denominador);

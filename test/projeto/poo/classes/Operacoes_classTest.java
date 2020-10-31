@@ -33,7 +33,7 @@ public class Operacoes_classTest {
     
     
     /**
-     * TESTE DO METODO MMC, DA CLASSE "Operacoes_class".
+     * TESTE DO METODO MMC, DA CLASSE "Operacoes_class":
      */
     @Test
     public void testMmc() {
@@ -48,12 +48,27 @@ public class Operacoes_classTest {
     
     
     /**
-     * Test of somaFracao method, of class Operacoes_class.
+     * TESTE DO METODO "somaFracao", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testSomaFracao() {
+        
+        int denominador = 2;
+        int numerador1 = 3;
+        int numerador2 = 5;
+        int resultado = calc.somaFracao(denominador, numerador1, numerador2);
+        assertEquals(4, resultado);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of subtraiFracao method, of class Operacoes_class.
      */
