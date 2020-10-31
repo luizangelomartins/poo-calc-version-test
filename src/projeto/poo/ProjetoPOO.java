@@ -43,6 +43,7 @@ public class ProjetoPOO {
             System.out.println("1 = FAZER MMC.");
             System.out.println("2 = SOMAR FRAÇÃO.");
             System.out.println("3 = SUBTRAIR FRAÇÃO.");
+            System.out.println("4 = MULTIPLICAR FRAÇÃO.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -102,7 +103,8 @@ public class ProjetoPOO {
                 
                 }
         
-                System.err.println("O RESULTADO E: " + operar.somaFracao(denominador_soma, numerador1_soma, numerador2_soma));
+                System.err.println("SUA FRAÇÃO: " + (numerador1_soma+numerador2_soma) +" / "+ denominador_soma);
+                System.err.println("A APROXIMAÇÃO DEU: " + operar.somaFracao(denominador_soma, numerador1_soma, numerador2_soma));
         
                     break;
                     
@@ -130,12 +132,50 @@ public class ProjetoPOO {
                 
                 }
         
+                System.err.println("SUA FRAÇÃO: " + (numerador1_subtrair-numerador2_subtrair) +" / "+ denominador_subtrair);
                 System.err.println("A APROXIMAÇÃO DEU: " + operar.somaFracao(denominador_subtrair, numerador1_subtrair, numerador2_subtrair));
         
                     break;        
               
                     
                     
+            // BLOCO QUE SE TRATA DA MULTIPLICAÇÃO DE FRAÇÕES:        
+            case 4:
+                
+                int denominador1_multiplicar = 0;
+                int denominador2_multiplicar = 0;
+                int numerador1_multiplicar = 0;
+                int numerador2_multiplicar = 0;
+                
+                while ( denominador1_multiplicar == 0 || denominador1_multiplicar == 1 || denominador2_multiplicar == 0 || denominador2_multiplicar == 1 ||
+                        numerador1_multiplicar == 0 || numerador1_multiplicar == 1 || numerador2_multiplicar == 0 || numerador2_multiplicar == 1 ) {
+                    
+                Scanner multiplicar = new Scanner(System.in);
+        
+                System.out.printf("Digite o primeiro denominador: "); 
+                denominador1_multiplicar = multiplicar.nextInt(); 
+                System.out.printf("Digite o segundo denominador: "); 
+                denominador2_multiplicar = multiplicar.nextInt(); 
+                
+                System.out.printf("Digite o primeiro numerador: "); 
+                numerador1_multiplicar = multiplicar.nextInt(); 
+                System.out.printf("Digite o segundo numerador: "); 
+                numerador2_multiplicar = multiplicar.nextInt(); 
+                
+                    if ( denominador1_multiplicar == 0 ) { System.err.println("DENOMINADOR 1 - NÃO HÁ SUPORTE PARA ESTE DENOMINADOR!"); }
+                    if ( denominador2_multiplicar == 0 ) { System.err.println("DENOMINADOR 2 - NÃO HÁ SUPORTE PARA ESTE DENOMINADOR!"); }
+                    if ( denominador1_multiplicar == 1 ) { System.err.println("DENOMINADOR 1 - NÃO HÁ SUPORTE PARA ESTE DENOMINADOR!"); }
+                    if ( denominador2_multiplicar == 1 ) { System.err.println("DENOMINADOR 2 - NÃO HÁ SUPORTE PARA ESTE DENOMINADOR!"); }
+                    
+                } 
+        
+                System.err.println("SUA FRAÇÃO: " + (numerador1_multiplicar*numerador2_multiplicar) +" / "+ (denominador1_multiplicar*denominador2_multiplicar));
+                System.err.println("A APROXIMAÇÃO DEU: " + operar.multiplicaFracao(numerador1_multiplicar, numerador2_multiplicar, denominador1_multiplicar, denominador2_multiplicar));
+                
+            break;
+               
+            
+            
             // VALORES INVALIDOS:        
             default:
                 

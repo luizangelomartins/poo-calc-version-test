@@ -79,30 +79,38 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /**
-     * Test of multiplicaFracao method, of class Operacoes_class.
+     * TESTE DO METODO "multiplicaFracao", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testMultiplicaFracao() {
+        
+        int denominador1 = 5;
+        int denominador2 = 2;
+        int numerador1 = 5;
+        int numerador2 = 4;
+        int resultado = calc.multiplicaFracao(numerador1, numerador2, denominador1, denominador2);
+        
+        assertEquals(2, resultado);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of divideFracao method, of class Operacoes_class.
      */

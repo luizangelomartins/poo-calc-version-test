@@ -25,7 +25,7 @@ public interface Operacoes {
 	abstract int subtraiFracao(int numerador1, int numerador2, int denominador1);
         
 	// Multiplicação:
-	abstract int multiplicaFracao(int numerador, int denominador);
+	abstract int multiplicaFracao(int numerador1, int numerador2, int denominador1, int denominador2);
         
 	// Divisão:
 	abstract int divideFracao(int numerador, int denominador);

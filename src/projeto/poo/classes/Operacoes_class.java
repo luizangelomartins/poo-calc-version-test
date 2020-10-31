@@ -67,21 +67,36 @@ public class Operacoes_class implements Operacoes {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // MÉTODO PARA MULTIPLICAÇÃO DE FRAÇÕES:
     @Override
-    public int multiplicaFracao(int numerador, int denominador) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int multiplicaFracao(int numerador1, int numerador2, int denominador1, int denominador2) {
+        
+        int numerador;
+        int denominador;
+        double result;
+        
+        numerador = numerador1 * numerador2;
+        denominador = denominador1 * denominador2;
+        result = numerador / denominador;
+        
+        return (int) result;
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public int divideFracao(int numerador, int denominador) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
