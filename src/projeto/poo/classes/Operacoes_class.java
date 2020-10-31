@@ -1,27 +1,43 @@
+
+
+
+    // CRIADOR: Luiz Ângelo Martins.
+
+
+
+// PACOTE:
 package projeto.poo.classes;
 
-import projeto.poo.ProjetoPOO;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 
-/**
- *
- * @author Luiz Ângelo Martins
- */
+// MÉTODO PRINCIPAL DA CLASSE DE IMPLEMENTAÇÃO:
 public class Operacoes_class implements Operacoes {
 
-    
-    
-    @Override
-    public int mmc() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
+    
+    // MÉTODO DE CALCULO "MMC":
+    public int mmc ( int denominador1, int denominador2 ) {
+
+        int a = denominador1;
+        int b = denominador2;
+        
+        while ( b != 0 ) {
+        
+            int r = a % b;
+            a = b;
+            b = r;
+            
+        }
+        
+        return denominador1 * (denominador2 / a );
+        
+    }
+        
+        
+    
+    
+    
+    
     @Override
     public int somaFracao(int numerador, int denominador) {
         
@@ -96,3 +112,7 @@ public class Operacoes_class implements Operacoes {
     }
     
 }
+
+
+
+

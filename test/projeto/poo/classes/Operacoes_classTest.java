@@ -1,29 +1,52 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
+
+    // CRIADOR: Luiz Ângelo Martins.
+
+
+
+// PACOTE:
 package projeto.poo.classes;
 
+
+
+// IMPORTAÇÃO DE BIBLIOTECAS:
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/**
- *
- * @author NIGHTMARE GAME ZERO
- */
+
+
+// MÉTODO PRINCIPAL DA CLASSE DE IMPLEMENTAÇÃO:
 public class Operacoes_classTest {
+    
+    
+    
+    // DECLARAÇÃO DO OBJETO PRINCIPAL DE CALCULO:
+    Operacoes_class calc = new Operacoes_class();
+    
+    
     
     public Operacoes_classTest() {
     }
 
+    
+    
+    
     /**
-     * Test of mmc method, of class Operacoes_class.
+     * TESTE DO METODO MMC, DA CLASSE "Operacoes_class".
      */
     @Test
     public void testMmc() {
+        
+        int valor;
+        valor = calc.mmc(8, 12);
+        assertEquals(24, valor);
+        
     }
 
+    
+    
+    
     /**
      * Test of somaFracao method, of class Operacoes_class.
      */
@@ -100,5 +123,16 @@ public class Operacoes_classTest {
     @Test
     public void testFahrenheitToKelvin() {
     }
+
+    /**
+     * Test of mdc method, of class Operacoes_class.
+     */
+    @Test
+    public void testMdc() {
+    }
     
 }
+
+
+
+

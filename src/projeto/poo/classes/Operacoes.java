@@ -1,45 +1,60 @@
+
+
+
+    // CRIADOR: Luiz Ângelo Martins.
+
+
+
+// PACOTE:
 package projeto.poo.classes;
 
+
+
+// MÉTODO PRINCIPAL DA CLASSE DE IMPLEMENTAÇÃO:
 public interface Operacoes {
 
-	/*
-	 *  Calculadora de Frações
-	 */
-	
-	// Mínimo múltiplo Comum
-	abstract int mmc(); 
+    
+    
+	// Mínimo múltiplo Comum:
+	abstract int mmc(int denominador1, int denominador2); 
         
-        
-	// Soma
+	// Soma:
 	abstract int somaFracao(int numerador, int denominador); 
-	// Subtração
+        
+	// Subtração:
 	abstract int subtraiFracao(int numerador, int denominador);
-	// Multiplicação
+        
+	// Multiplicação:
 	abstract int multiplicaFracao(int numerador, int denominador);
-	// Divisão
+        
+	// Divisão:
 	abstract int divideFracao(int numerador, int denominador);
-
 	
-	/*
-	 *  Calculadora de IMC
-	 */
-	
+	// Índice de massa corporal:
 	abstract double imc(double altura, double massa);
 	
-	/*
-	 *  Calculadora de Conversão de Escalas Termométricas
-	 */
-	
+	// Converter - Celsius para Kelvin:
 	abstract double celsiusToKelvin(double celcius);
 	
+	// Converter - Celsius para Fahrenheit:
 	abstract double celsiusToFahrenheit(double celcius);
 	
+	// Converter - Kelvin para Celsius:
 	abstract double kelvinToCelcius(double kelvin);
 	
+	// Converter - Kelvin para Fahrenheit:
 	abstract double kelvinToFahrenheit(double kelvin);
 	
+	// Converter - Fahrenheit para Celsius:
 	abstract double fahrenheitToCelcius(double fahrenheit);
 	
+	// Converter - Fahrenheit para Kelvin:
 	abstract double fahrenheitToKelvin(double fahrenheit);
 	
+        
+        
 }
+
+
+
+
