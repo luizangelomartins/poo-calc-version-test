@@ -176,21 +176,29 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     /**
-     * Test of kelvinToFahrenheit method, of class Operacoes_class.
+     * TESTE DO METODO "kelvinToFahrenheit", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testKelvinToFahrenheit() {
+        
+        double kelvin = 50;
+        double Fahrenheit;
+        Fahrenheit = calc.kelvinToFahrenheit(kelvin);
+        assertEquals(-369.67, Fahrenheit, 1);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of fahrenheitToCelcius method, of class Operacoes_class.
      */

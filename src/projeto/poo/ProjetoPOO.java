@@ -49,6 +49,7 @@ public class ProjetoPOO {
             System.out.println("7 = CONVERTER CELSIUS PARA KELVIN.");
             System.out.println("8 = CONVERTER CELSIUS PARA FAHRENHEIT.");
             System.out.println("9 = CONVERTER KELVIN PARA CELSIUS.");
+            System.out.println("10 = CONVERTER KELVIN PARA FAHRENHEIT.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -290,6 +291,24 @@ public class ProjetoPOO {
                 celcius = operar.kelvinToCelcius(kelvin_Celcius);
                 
                 System.err.println("A TEMPERATURA DE " + kelvin_Celcius + " KELVIN E IGUAL A " + celcius + " CELCIUS");
+                
+            break;
+            
+            
+            
+            // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+            // KELVIN PARA FAHRENHEIT:
+            case 10:
+                
+                double kelvin_Fahrenheit;
+                double Fahrenheit_from_kelvin;
+                Scanner kelvinToFahrenheit = new Scanner(System.in);
+                
+                System.out.printf("Digite o valor da temperatura em kelvin: "); 
+                kelvin_Fahrenheit = kelvinToFahrenheit.nextDouble(); 
+                Fahrenheit_from_kelvin = operar.kelvinToFahrenheit(kelvin_Fahrenheit);
+                
+                System.err.println("A TEMPERATURA DE " + kelvin_Fahrenheit + " KELVIN E IGUAL A " + Fahrenheit_from_kelvin + " FAHRENHEIT");
                 
             break;
             
