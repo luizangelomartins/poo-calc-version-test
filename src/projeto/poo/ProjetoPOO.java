@@ -40,11 +40,12 @@ public class ProjetoPOO {
             Scanner escolha = new Scanner(System.in);
             System.out.println("");
             System.out.println("0 = SAIR.");
-            System.out.println("1 = FAZER MMC.");
+            System.out.println("1 = CALCULO DE MMC.");
             System.out.println("2 = SOMAR FRAÇÃO.");
             System.out.println("3 = SUBTRAIR FRAÇÃO.");
             System.out.println("4 = MULTIPLICAR FRAÇÃO.");
             System.out.println("5 = DIVIDIR FRAÇÃO.");
+            System.out.println("6 = CALCULO DE IMC.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -210,6 +211,31 @@ public class ProjetoPOO {
             break;
             
             
+            
+            // BLOCO QUE TRATA SOBRE O IMC:
+            case 6:
+                
+                double peso;
+                double altura;
+                double result;
+                Scanner imc = new Scanner(System.in);
+                
+                System.out.printf("Digite o valor do peso corporal: "); 
+                peso = imc.nextDouble(); 
+                System.out.printf("Digite o valor da altura: "); 
+                altura = imc.nextDouble(); 
+                
+                result = operar.imc(peso, altura);
+                if ( result < 18 ) { System.err.println("A PESSOA ESTÁ ABAIXO DO PESO!"); }
+                if ( result > 18 && result < 25 ) { System.err.println("A PESSOA ESTÁ COM O PESO NORMAL!"); }
+                if ( result > 25 && result < 30 ) { System.err.println("A PESSOA ESTÁ COM SOBRE PESO!"); }
+                if ( result > 30 && result < 35 ) { System.err.println("A PESSOA ESTÁ COM OBESIDADE GRAU I!"); }
+                if ( result > 35 && result < 40 ) { System.err.println("A PESSOA ESTÁ COM OBESIDADE GRAU II!"); }
+                if ( result > 40 ) { System.err.println("A PESSOA ESTÁ COM OBESIDADE GRAU III!"); }
+                
+            break;
+                
+                
             
             // VALORES INVALIDOS:        
             default:

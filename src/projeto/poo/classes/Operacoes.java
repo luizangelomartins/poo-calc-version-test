@@ -31,7 +31,7 @@ public interface Operacoes {
 	abstract int divideFracao(int numerador1, int numerador2, int denominador1, int denominador2);
 	
 	// Índice de massa corporal:
-	abstract double imc(double altura, double massa);
+	abstract double imc(double peso, double altura);
 	
 	// Converter - Celsius para Kelvin:
 	abstract double celsiusToKelvin(double celcius);

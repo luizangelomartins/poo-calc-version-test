@@ -103,28 +103,27 @@ public class Operacoes_class implements Operacoes {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // MÉTODO PARA O CÁLCULO DE IMC ( ÍNDICE DE MASSA CORPORAL ):
     @Override
-    public double imc(double altura, double massa) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double imc(double peso, double altura) {
+        
+        double resultado;
+        resultado = peso / ( altura * altura );
+        
+        return resultado;
+        
     }
 
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
     @Override
     public double celsiusToKelvin(double celcius) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

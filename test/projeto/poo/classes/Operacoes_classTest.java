@@ -107,7 +107,7 @@ public class Operacoes_classTest {
         int denominador2 = 9;
         int numerador1 = 4;
         int numerador2 = 9;
-        int resultado = calc.multiplicaFracao(numerador1, numerador2, denominador1, denominador2);
+        int resultado = calc.divideFracao(numerador1, numerador2, denominador1, denominador2);
         
         assertEquals(4, resultado);
         
@@ -115,21 +115,31 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     /**
-     * Test of imc method, of class Operacoes_class.
+     * TESTE DO METODO "imc", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testImc() {
+        
+        double peso = 80;
+        double altura = 1.80;
+        double result = calc.imc(peso, altura);
+        
+        assertEquals(24.69, result, 1);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of celsiusToKelvin method, of class Operacoes_class.
      */
