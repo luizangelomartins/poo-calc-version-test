@@ -51,6 +51,7 @@ public class ProjetoPOO {
             System.out.println("9 = CONVERTER KELVIN PARA CELSIUS.");
             System.out.println("10 = CONVERTER KELVIN PARA FAHRENHEIT.");
             System.out.println("11 = CONVERTER FAHRENHEIT PARA CELSIUS.");
+            System.out.println("12 = CONVERTER FAHRENHEIT PARA KELVIN.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -331,8 +332,26 @@ public class ProjetoPOO {
                 
             break;
             
-                
             
+            
+            // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+            // FAHRENHEIT PARA KELVIN:
+            case 12:
+                
+                double fahrenheit_Kelvin;
+                double Kelvin_from_Fahrenheit;
+                Scanner fahrenheitToKelvin = new Scanner(System.in);
+                
+                System.out.printf("Digite o valor da temperatura em fahrenheit: "); 
+                fahrenheit_Kelvin = fahrenheitToKelvin.nextDouble(); 
+                Kelvin_from_Fahrenheit = operar.fahrenheitToKelvin(fahrenheit_Kelvin);
+                
+                System.err.println("A TEMPERATURA DE " + fahrenheit_Kelvin + " FAHRENHEIT E IGUAL A " + Kelvin_from_Fahrenheit + " KELVIN");
+                
+            break;
+            
+                
+                
             // VALORES INVALIDOS:        
             default:
                 
