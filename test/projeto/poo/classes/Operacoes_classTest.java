@@ -191,21 +191,29 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     /**
-     * Test of fahrenheitToCelcius method, of class Operacoes_class.
+     * TESTE DO METODO "fahrenheitToCelcius", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testFahrenheitToCelcius() {
+        
+        double Fahrenheit = 50;
+        double Celcius;
+        Celcius = calc.fahrenheitToCelcius(Fahrenheit);
+        assertEquals(10, Celcius, 1);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of fahrenheitToKelvin method, of class Operacoes_class.
      */
@@ -213,12 +221,7 @@ public class Operacoes_classTest {
     public void testFahrenheitToKelvin() {
     }
 
-    /**
-     * Test of mdc method, of class Operacoes_class.
-     */
-    @Test
-    public void testMdc() {
-    }
+
     
 }
 
