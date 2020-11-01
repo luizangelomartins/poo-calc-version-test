@@ -48,6 +48,7 @@ public class ProjetoPOO {
             System.out.println("6 = CALCULO DE IMC.");
             System.out.println("7 = CONVERTER CELSIUS PARA KELVIN.");
             System.out.println("8 = CONVERTER CELSIUS PARA FAHRENHEIT.");
+            System.out.println("9 = CONVERTER KELVIN PARA CELSIUS.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -272,6 +273,23 @@ public class ProjetoPOO {
                 
                 System.err.println("A TEMPERATURA DE " + celsius_Fahrenheit + " GRAUS CELSIUS E IGUAL A " + Fahrenheit + " FAHRENHEIT");
                 
+            break;
+            
+            
+            
+            // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+            // KELVIN PARA CELSIUS:
+            case 9:
+                
+                double kelvin_Celcius;
+                double celcius;
+                Scanner kelvinToCelcius = new Scanner(System.in);
+                
+                System.out.printf("Digite o valor da temperatura em kelvin: "); 
+                kelvin_Celcius = kelvinToCelcius.nextDouble(); 
+                celcius = operar.kelvinToCelcius(kelvin_Celcius);
+                
+                System.err.println("A TEMPERATURA DE " + kelvin_Celcius + " KELVIN E IGUAL A " + celcius + " CELCIUS");
                 
             break;
             

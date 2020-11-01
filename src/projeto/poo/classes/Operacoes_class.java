@@ -122,7 +122,7 @@ public class Operacoes_class implements Operacoes {
     public double celsiusToKelvin(double celcius) {
         
         double k;
-        k = celcius + 273;
+        k = celcius + 273.15;
         return  k;
         
     }
@@ -144,24 +144,26 @@ public class Operacoes_class implements Operacoes {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+    // KELVIN PARA CELSIUS:
     @Override
     public double kelvinToCelcius(double kelvin) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        double celcius;
+        celcius = kelvin - 273.15;
+        return  celcius;
+    
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public double kelvinToFahrenheit(double kelvin) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

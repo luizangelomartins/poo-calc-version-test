@@ -137,10 +137,10 @@ public class Operacoes_classTest {
     @Test
     public void testCelsiusToKelvin() {
         
-        double celsius = 37;
+        double celsius = 37.0;
         double kelvin;
         kelvin = calc.celsiusToKelvin(celsius);
-        assertEquals(310, kelvin, 1);
+        assertEquals(310.15, kelvin, 1);
         
     }
 
@@ -161,21 +161,29 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
     /**
-     * Test of kelvinToCelcius method, of class Operacoes_class.
+     * TESTE DO METODO "kelvinToCelcius", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testKelvinToCelcius() {
+        
+        double kelvin = 310.15;
+        double celsius;
+        kelvin = calc.kelvinToCelcius(kelvin);
+        assertEquals(37.0, kelvin, 1);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of kelvinToFahrenheit method, of class Operacoes_class.
      */
