@@ -129,19 +129,34 @@ public class Operacoes_class implements Operacoes {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+    // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+    // CELSIUS PARA FAHRENHEIT:
     @Override
     public double celsiusToFahrenheit(double celcius) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
+        double f;
+        double aux;
+        //aux = 9 / 5;
+        f = ( celcius * 9/5 ) + 32;
+        return f;
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public double kelvinToCelcius(double kelvin) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

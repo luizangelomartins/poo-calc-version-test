@@ -47,6 +47,7 @@ public class ProjetoPOO {
             System.out.println("5 = DIVIDIR FRAÇÃO.");
             System.out.println("6 = CALCULO DE IMC.");
             System.out.println("7 = CONVERTER CELSIUS PARA KELVIN.");
+            System.out.println("8 = CONVERTER CELSIUS PARA FAHRENHEIT.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -252,6 +253,25 @@ public class ProjetoPOO {
                 kelvin = operar.celsiusToKelvin(celsius);
                 
                 System.err.println("A TEMPERATURA DE " + celsius + " GRAUS CELSIUS E IGUAL A " + kelvin + " KELVIN");
+                
+            break;
+            
+            
+            
+            // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+            // CELSIUS PARA FAHRENHEIT:
+            case 8:
+                
+                double celsius_Fahrenheit;
+                double Fahrenheit;
+                Scanner celsiusToFahrenheit = new Scanner(System.in);
+                
+                System.out.printf("Digite o valor da temperatura em celsius: "); 
+                celsius_Fahrenheit = celsiusToFahrenheit.nextDouble(); 
+                Fahrenheit = operar.celsiusToFahrenheit(celsius_Fahrenheit);
+                
+                System.err.println("A TEMPERATURA DE " + celsius_Fahrenheit + " GRAUS CELSIUS E IGUAL A " + Fahrenheit + " FAHRENHEIT");
+                
                 
             break;
             
