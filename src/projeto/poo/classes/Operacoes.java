@@ -28,7 +28,7 @@ public interface Operacoes {
 	abstract int multiplicaFracao(int numerador1, int numerador2, int denominador1, int denominador2);
         
 	// Divisão:
-	abstract int divideFracao(int numerador, int denominador);
+	abstract int divideFracao(int numerador1, int numerador2, int denominador1, int denominador2);
 	
 	// Índice de massa corporal:
 	abstract double imc(double altura, double massa);

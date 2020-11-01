@@ -44,6 +44,7 @@ public class ProjetoPOO {
             System.out.println("2 = SOMAR FRAÇÃO.");
             System.out.println("3 = SUBTRAIR FRAÇÃO.");
             System.out.println("4 = MULTIPLICAR FRAÇÃO.");
+            System.out.println("5 = DIVIDIR FRAÇÃO.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -147,8 +148,8 @@ public class ProjetoPOO {
                 int numerador1_multiplicar = 0;
                 int numerador2_multiplicar = 0;
                 
-                while ( denominador1_multiplicar == 0 || denominador1_multiplicar == 1 || denominador2_multiplicar == 0 || denominador2_multiplicar == 1 ||
-                        numerador1_multiplicar == 0 || numerador1_multiplicar == 1 || numerador2_multiplicar == 0 || numerador2_multiplicar == 1 ) {
+                while ( denominador1_multiplicar == 0 || denominador1_multiplicar == 1 || 
+                        denominador2_multiplicar == 0 || denominador2_multiplicar == 1 ) {
                     
                 Scanner multiplicar = new Scanner(System.in);
         
@@ -173,7 +174,41 @@ public class ProjetoPOO {
                 System.err.println("A APROXIMAÇÃO DEU: " + operar.multiplicaFracao(numerador1_multiplicar, numerador2_multiplicar, denominador1_multiplicar, denominador2_multiplicar));
                 
             break;
-               
+            
+            
+            
+            // BLOCO QUE SE TRATA DA DIVISÃO DE FRAÇÕES:    
+            case 5:
+                
+                int denominador1_dividir = 0;
+                int denominador2_dividir = 0;
+                int numerador1_dividir = 0;
+                int numerador2_dividir = 0;
+                
+                while ( denominador1_dividir == 0 || denominador2_dividir == 0 ) {
+                    
+                Scanner dividir = new Scanner(System.in);
+        
+                System.out.printf("Digite o primeiro numerador: "); 
+                numerador1_dividir = dividir.nextInt(); 
+                System.out.printf("Digite o segundo numerador: "); 
+                numerador2_dividir = dividir.nextInt(); 
+                
+                System.out.printf("Digite o primeiro denominador: "); 
+                denominador1_dividir = dividir.nextInt(); 
+                System.out.printf("Digite o segundo denominador: "); 
+                denominador2_dividir = dividir.nextInt(); 
+                
+                    if ( denominador1_dividir == 0 ) { System.err.println("DENOMINADOR 1 - NÃO HÁ SUPORTE PARA ESTE DENOMINADOR!"); }
+                    if ( denominador2_dividir == 0 ) { System.err.println("DENOMINADOR 2 - NÃO HÁ SUPORTE PARA ESTE DENOMINADOR!"); }
+                    
+                } 
+        
+                System.err.println("SUA FRAÇÃO: " + (numerador1_dividir*denominador2_dividir) +" / "+ (denominador1_dividir*numerador2_dividir));
+                System.err.println("A APROXIMAÇÃO DEU: " + operar.multiplicaFracao(numerador1_dividir, numerador2_dividir, denominador1_dividir, denominador2_dividir));
+                
+            break;
+            
             
             
             // VALORES INVALIDOS:        

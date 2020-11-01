@@ -85,23 +85,41 @@ public class Operacoes_class implements Operacoes {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    // MÉTODO PARA DIVISÃO DE FRAÇÕES:
     @Override
-    public int divideFracao(int numerador, int denominador) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int divideFracao(int numerador1, int numerador2, int denominador1, int denominador2) {
+        
+        int numerador;
+        int denominador;
+        double result;
+        
+        numerador = numerador1 * denominador2;
+        denominador = denominador1 * numerador2;
+        result = numerador / denominador;
+        
+        return (int) result;
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Override
     public double imc(double altura, double massa) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
