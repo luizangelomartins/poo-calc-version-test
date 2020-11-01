@@ -2,6 +2,7 @@
 
 
     // CRIADOR: Luiz Ângelo Martins.
+    // JAVADOC DISPONIVEL.
 
 
 
