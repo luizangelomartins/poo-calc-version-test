@@ -131,22 +131,29 @@ public class Operacoes_classTest {
 
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /**
-     * Test of celsiusToKelvin method, of class Operacoes_class.
+     * TESTE DO METODO "celsiusToKelvin", DA CLASSE "Operacoes_class":
      */
     @Test
     public void testCelsiusToKelvin() {
+        
+        double celsius = 37;
+        double kelvin;
+        kelvin = calc.celsiusToKelvin(celsius);
+        assertEquals(310, kelvin, 1);
+        
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Test of celsiusToFahrenheit method, of class Operacoes_class.
      */

@@ -46,6 +46,7 @@ public class ProjetoPOO {
             System.out.println("4 = MULTIPLICAR FRAÇÃO.");
             System.out.println("5 = DIVIDIR FRAÇÃO.");
             System.out.println("6 = CALCULO DE IMC.");
+            System.out.println("7 = CONVERTER CELSIUS PARA KELVIN.");
             System.out.println("");
             System.err.printf("DIGITE SUA ESCOLHA: ");
             escolha_usuario = escolha.nextInt(); 
@@ -60,6 +61,7 @@ public class ProjetoPOO {
             // BLOCO QUE SE TRATA DO ENCERRAMENTO DO PROGRAMA:
             case 0:
                 
+                System.err.println("VOCÊ SAIU!");
                 escolha_usuario = 0;
                 
                 break;
@@ -234,8 +236,26 @@ public class ProjetoPOO {
                 if ( result > 40 ) { System.err.println("A PESSOA ESTÁ COM OBESIDADE GRAU III!"); }
                 
             break;
+            
+            
+            
+            // MÉTODO PARA O CÁLCULO DE TEMPERATURA:
+            // CELSIUS PARA KELVIN:
+            case 7:
                 
+                double celsius;
+                double kelvin;
+                Scanner celsiusToKelvin = new Scanner(System.in);
                 
+                System.out.printf("Digite o valor da temperatura em celsius: "); 
+                celsius = celsiusToKelvin.nextDouble(); 
+                kelvin = operar.celsiusToKelvin(celsius);
+                
+                System.err.println("A TEMPERATURA DE " + celsius + " GRAUS CELSIUS E IGUAL A " + kelvin + " KELVIN");
+                
+            break;
+            
+            
             
             // VALORES INVALIDOS:        
             default:
